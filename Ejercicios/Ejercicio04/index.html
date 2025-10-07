@@ -5,39 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Guillermo Cortés Van de Velde">
     <meta name="description" content="Ejercicio 03 relación HTML">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Ejercicio 03 relación HTML</title>
 </head>
     <body>
-        <h1>DATOS TRABAJADORES</h1>
-        <hr>
-        <div id="trabajador1"> <!--Contenedor Trabajador 1-->
-            <h2>TRABAJADOR 1</h2>
-            <div id="dPersonales1"> <!--Contenedor Datos Personales-->
+        <h1 class="titulo">DATOS TRABAJADORES</h1>
+
+        <!--Contenedor Trabajador 1-->
+        <div class="trabajadores">
+            <hr>
+            <h2 id="trabajador1">TRABAJADOR 1</h2>
+            <div class="datos-personales"> <!--Contenedor Datos Personales-->
                 <h3>Datos personales</h3>
-                <pre>   Nombre: Gloria Martín Ruiz</pre>
-                <pre>   Email: <a href="mailto:gmartin@empresa.com">gmartin@empresa.com</a></pre>
-                <pre>   Teléfono: 666 22 55 88</pre>
+                <ul>
+                    <li><span class="indices">Nombre</span>: Gloria Martín Ruiz</li>
+                    <li><span class="indices">Email</span>: gmartin@empresa.com</li>
+                    <li><span class="indices">Teléfono</span>: 666 22 55 88</li>
+                </ul>
             </div>
-            <div id="estudios1"> <!--Contenedor Estudios-->
+            <div class="estudios"> <!--Contenedor Estudios-->
                 <h3>Estudios</h3>
-                <pre>   Bachillerato</pre>
-                <pre>   Grado Superior Desarrollo de Aplicaciones Web</pre>
-                <hr>
+                <ul>
+                    <li>Bachillerato</li>
+                    <li>Grado Superior Desarrollo de Aplicaciones Web</li>
+                </ul>
             </div>
         </div>
-        <div id="trabajador2"> <!--Contenedor Trabajador 2-->
-            <h2>TRABAJADOR 2</h2>
-            <div id="dPersonales2"> <!--Contenedor Datos Personales-->
+        <div class="trabajadores"> <!--Contenedor Trabajador 2-->
+            <hr>
+            <h2 id="trabajador2">TRABAJADOR 2</h2>
+            <div class="datos-personales"> <!--Contenedor Datos Personales-->
                 <h3>Datos personales</h3>
-                <pre>   Nombre: Alberto Pérez Martín</pre>
-                <pre>   Email: <a href="mailto:aperez@empresa.com">aperez@empresa.com</a></pre>
-                <pre>   Teléfono: 622 11 88 99</pre>
+                <ul>
+                    <li><span class="indices">Nombre</span>: Alberto Pérez Martín</li>
+                    <li><span class="indices">Email</span>: aperez@empresa.com</li>
+                    <li><span class="indices">Teléfono</span>: 622 11 88 99</li>
+                </ul>
             </div>
-            <div id="estudios2"> <!--Contenedor Estudios-->
+            <div class="estudios"> <!--Contenedor Estudios-->
                 <h3>Estudios</h3>
-                <pre>   Bachillerato</pre>
-                <pre>   Grado Superior Desarrollo de Aplicaciones Multiplataforma</pre>
+                <ul>
+                    <li>Bachillerato</li>
+                    <li>Grado Superior Desarrollo de Aplicaciones Multiplataforma</li>
+                </ul>
             </div>
         </div>
     </body>

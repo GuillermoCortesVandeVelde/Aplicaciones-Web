@@ -1,0 +1,50 @@
+/* cuando es un id, ponemos delante #  
+#titulo {
+    color: red;
+}
+*/
+/* Cuando es un class, ponemos delante . 
+.trabajador {
+    background-color: gray;
+}
+*/
+/* Cuando es una etiqueta, ponemos la etiqueta 
+pre {
+    text-align: right;
+}
+*/
+
+.titulo {
+    color: red;
+}
+
+.trabajadores {
+    background-color: grey;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.datos-personales {
+    /* border-style: solid;
+    border-width: 2px; */
+    border: 2px solid black;
+}
+
+.estudios {
+    border: 5px double black;
+}
+
+.indices {
+    text-decoration: underline;
+}
+
+#trabajador1 {
+    color: blue;
+}
+
+#trabajador2 {
+    color: green;
+}
