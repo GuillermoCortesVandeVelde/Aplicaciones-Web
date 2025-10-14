@@ -1,13 +1,67 @@
 body {
     background-color: #f4f4f4;
     min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+header p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
 }
 
 .menu-arriba {
     background-color: #8b5d5d;
+    padding: 0px;
 }
 
 .menu-arriba ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Usamos Flexbox para alinear los elementos de una lista */
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu-arriba ul li {
+    margin: 10px 15px;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.contenido h2 {
+    color: #333;
+    text-align: center;
+}
+
+.articulo {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.acerca h2 {
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.acerca p {
+    margin-left: 50px;
 }
