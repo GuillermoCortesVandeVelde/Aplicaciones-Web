@@ -1,3 +1,34 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.titulo {
+    color: grey;
+    font-weight: bold;
+}
+
+.subtitulo-exitos {
+    margin-bottom: 0;
+    margin-left: 85px;
+}
+
+.tabla-exitos, .tabla-exitos th, .tabla-exitos td {
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: black;
+}
+
+.tabla-exitos th, .tabla-exitos td {
+    padding: 10px;
+}
+
+.tabla-exitos th {
+    color: white;
+    background-color: rgb(100, 100, 100);
+}
+
+.final-tabla {
+    background-color: rgb(200, 200, 200);
 }
