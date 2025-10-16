@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Display: flex dispuestos en columnas */
+}
+
+header {
+    background-color: #F5A623;
+    color: white;
+    /* Display: flex dispuesto en columnas */
+    text-align: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    background-color: beige;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: cen;
+}
