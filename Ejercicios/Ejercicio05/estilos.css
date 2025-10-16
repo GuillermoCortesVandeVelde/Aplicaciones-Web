@@ -8,11 +8,6 @@ body {
     font-weight: bold;
 }
 
-.subtitulo-exitos {
-    margin-bottom: 0;
-    margin-left: 85px;
-}
-
 .tabla-exitos, .tabla-exitos th, .tabla-exitos td {
     border-style: solid;
     border-collapse: collapse;
