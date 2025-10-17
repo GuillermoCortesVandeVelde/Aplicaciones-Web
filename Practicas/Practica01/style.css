@@ -54,6 +54,7 @@ footer {
 .caracteristicas ul {
     list-style: square;
     padding-left: 20px;
+    text-align: left;
 }
 
 .caracteristicas ul li {
@@ -62,6 +63,7 @@ footer {
 
 .caracteristicas span {
     font-weight: bold;
+    color: #F5A623;
 }
 
 .ingredientes {
