@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descritprion" content="Página web sobre videojuegos">
+    <meta name="author" content="Guillermo Cortés Van de Velde">
+    <link rel="stylesheet" href="estilos.css">
+    <title>GameZone - Tu portal de videojuego</title>
+</head>
+<body>
+    <header class="cabecera">
+        <h1 class="titulo">GameZone</h1>    <!-- Una clase -->
+    </header>
+
+    <main id="contenido-principal">     <!-- Un id -->
+        <section class="intro tarjeta">     <!-- Dos clases -->
+            <h2>Bienvenid@ a GameZone</h2>
+            <p>Portal de ejemplo para practicar HTML y CSS</p>
+            <p class="aviso">En este bloque aplicamos el box model sobre esta tarjeta</p>
+        </section>
+
+        <section class="listas-y-tabla tarjeta">
+            <h2>Guía rápida</h2>
+            <div class="listas">
+                <div>
+                    <h3>Características</h3>
+                    <ul class="lista">
+                        <li>Análisis semanales</li>
+                        <li>Guías paso a paso</li>
+                        <li>Comunidad activa</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Primeros pasos</h3>
+                    <ol class="lista">
+                        <li>Elige tu género favorito</li>
+                        <li>Explora la galería</li>
+                        <li>Lee las guías</li>
+                        <li>Comparte tu opinión</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Top ventas</h3>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Plataforma</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Racing Challenge</td>
+                        <td>PC</td>
+                        <td>120€</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Realms</td>
+                        <td>PS</td>
+                        <td>95.50€</td>
+                    </tr>
+                    <tr>
+                        <td>City Builder</td>
+                        <td>Nintendo Switch</td>
+                        <td>81.20€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
