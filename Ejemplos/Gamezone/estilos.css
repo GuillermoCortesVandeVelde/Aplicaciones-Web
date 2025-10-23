@@ -59,6 +59,14 @@ body {
     padding: 0;
 }
 
+.menu li {
+    transition: transform 0.3s;
+}
+
+.menu li:hover {
+    transform: scale(1.15);
+}
+
 /* Estilos básicos de los enlaces del menú */
 .menu a{
     color: #fff;
@@ -93,7 +101,12 @@ body {
     padding: 1.5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
+    /* transition: transform 0.3s; */
 }
+
+/* .tarjeta:hover {
+    transform: scale(1.05);
+} */
 
 /* Listas en dos comunas: usamos flexbox para alinear dos elementos en horizontal */
 .listas {
