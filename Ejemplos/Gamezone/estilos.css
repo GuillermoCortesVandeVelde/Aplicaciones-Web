@@ -163,3 +163,38 @@ body {
     text-align: center;
     padding: 1rem;
 }
+
+/* FORMULARIO */
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+#registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registro form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: bold;
+    gap: 0.30rem;
+}
+
+#registro form div input {
+    height: 1.5rem;
+    padding: 0.4rem;
+}
+
+#registro form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0rem 0rem auto;
+}

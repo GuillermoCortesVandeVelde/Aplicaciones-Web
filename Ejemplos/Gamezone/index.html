@@ -18,10 +18,11 @@
         <!-- Menú de navegación -->
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -83,6 +84,46 @@
                 </tbody>
             </table>
         </section>
+
+        <!-- Formulario de búsqueda -->
+        <section class="tarjeta">
+            <form name="buscar-juego" action="buscar.html" method="get">
+                <!-- label conectavisualmente y funcionalmente con el campo (for <-> id)
+                Sirve para asociar un texto descriptivo a un elemento del formulario.
+                En este ejemplo lo conectamos con el input busqueda -->
+                <label for="busqueda">Buscar juego:</label>
+                <input type="search" id="busqueda" name="busqueda" placeholder="Escribe el nombre del juego...">        <!-- El placeholder ofrece una pista visual -->
+                <button type="submit">Buscar</button>
+                
+            </form>
+        </section>
+
+        <!-- Formulario de registro con varios tipos de campos -->
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form name="register" action="registro.html" method="post">
+
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required>     <!-- required convierte el campo en obligatorio -->
+
+                <!-- Contraseña -->
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>       <!-- minlength y maxlength ayuda a validar los datos antes de enviar -->
+
+                <!-- Campo de Email -->
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+                <!-- Campo DNI/NIE -->
+                <label for="dni">DNI o NIE:</label>
+                <input type="text" name="dni" id="identidad" placeholder="12345678A/X1234567M" pattern="((([0-9]{8})|([X-Zx-z]{1}[0-9]{7}))([A-Za-z]{1}))" required>
+
+                <!-- Botón de envío -->
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
     </main>
 
     <footer class="pie">
