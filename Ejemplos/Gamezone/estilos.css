@@ -164,7 +164,7 @@ body {
     padding: 1rem;
 }
 
-/* FORMULARIO */
+/* FORMULARIO DE REGISTRO Y CONTACTO */
 input:valid {
     border: 1px solid green;
 }
@@ -174,12 +174,12 @@ input:invalid {
 }
 
 
-#registro form {
+#registro form, #contacto form {
     display: flex;
     flex-direction: column;
 }
 
-#registro form div {
+#registro form div, #contacto form div {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -187,14 +187,27 @@ input:invalid {
     gap: 0.30rem;
 }
 
-#registro form div input {
+
+#registro form div div input, #contacto form div div input {
     height: 1.5rem;
     padding: 0.4rem;
 }
 
-#registro form button {
+#contacto form div div select {
+    padding: 0.2rem;
+}
+
+button[type="submit"], button[type="reset"] {
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
+    border-width: 0.01rem;
     margin: 0.5rem 0rem 0rem auto;
+    cursor: pointer;        /* Establece como es el cursor al estar sobre el botón */
+    background-color: rgb(240, 240, 240);
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(225, 225, 225);
 }

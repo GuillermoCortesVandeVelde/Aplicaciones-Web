@@ -124,6 +124,73 @@
             </form>
         </section>
 
+        <section class="tarjeta">
+            <form action="contacto.php" method="get">
+                <fieldset>
+                    <legend>Lista desplegable</legend>      <!-- Añadir leyenda al fieldset -->
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">        <!-- Lista desplegable -->
+                        <option selected disabled>-Selecciona una opción-</option>
+                        <option value="fantasia">Fantasía</option>
+                        <option value="rol">Rol</option>
+                        <option value="aventuras">Aventuras</option>
+                        <option value="lucha">Lucha</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input tipo radio</legend>
+                    <p>Selecciona la plataforma:</p>
+
+                    <input type="radio" name="plataforma" id="pc" value="pc">
+                    <label for="pc">PC</label>
+                    <br>
+
+                    <input type="radio" name="plataforma" id="ps5" value="ps5">
+                    <label for="ps5">PS5</label>
+                    <br>
+
+                    <input type="radio" name="plataforma" id="nintendo" value="nintendo">
+                    <label for="nintendo">Nintendo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input tipo checkbox</legend>
+                    <p>Selecciona la plataforma:</p>
+
+                    <input type="checkbox" name="videoconsola" id="pc" value="pc">
+                    <label for="pc">PC</label>
+                    <br>
+
+                    <input type="checkbox" name="videoconsola" id="ps5" value="ps5" checked>
+                    <label for="ps5">PS5</label>
+                    <br>
+
+                    <input type="checkbox" name="videoconsola" id="nintendo" value="nintendo">
+                    <label for="nintendo">Nintendo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Campo tipo fecha</legend>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="" id="fecha">
+
+                    <label for="fecha-hora">Fecha y hora:</label>
+                    <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+                </fieldset>
+
+                <fieldset>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Deja aquí tu mensaje..."></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Buscar">
+                <input type="reset">
+
+        </section>
+
     </main>
 
     <footer class="pie">
