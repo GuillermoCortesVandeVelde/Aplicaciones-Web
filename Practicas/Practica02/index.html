@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guillermo Cortés Van de Velde">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Incidencia de clase</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <div class="marca">
+            <img src="imagenes/IAT-LOGOTIPO.jpg" alt="Logotipo de C.P.I.F.P. Alan Turing">
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <form action="procesarincidencia.php" method="post" class="formulario">
+            <fieldset>
+                <legend>Nueva incidencia</legend>
+                <div class="elemento-formulario">
+                    <label for="profesor">Profesor *:</label>
+                    <input type="text" placeholder="Escribe tu nombre aquí." required>
+                </div>
+                <div class="elemento-formulario">
+                    <label for="correo">Correo electrónico *:</label>
+                    <input type="email" placeholder="Escribe tu correo aquí." required>
+                </div>
+                <div class="elemento-formulario">
+                    <label for="departamento">Departamento *:</label>
+                    <select name="departamento" id="departamento" required>
+                        <option value="informatica" select >Informática</option>
+                    </select>
+                </div>
+                <div class="elemento-formulario">
+                    <label for="aula">Aula *:</label>
+                    <input type="text" placeholder="Indica aquí el aula de la incidencia">
+                </div>
+                <div class="elemento-formulario">
+                    <label for="dia">Día de la incidencia *:</label>
+                    <input type="date">
+                </div>
+                <div class="elemento-formulario">
+                    <label for="hora">Hora de la incidencia *:</label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+                <div class="elemento-formulario">
+                    <label for="descripcion">Descripción de la incidencia *:</label>
+                    <textarea name="descripcion" id="descripcion"></textarea>
+                </div>
+                <div class="elemento-formulario" id="subir-imagen">
+                    <label for="imagen">Imagen de la incidencia (opcional):</label>
+                    <input type="file">
+                </div>
+                <div  class="elemento-formulario"id="botones">
+                    <button type="submit">Enviar incidencia</button>
+                    <button type="reset">Borrar formulario</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <h3>Síguenos</h3>
+        <a href="https://www.facebook.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-facebook-48.png" alt="Enlace Facebook Alan Turing"></a>
+        <a href="https://x.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-twitter-48.png" alt="Enlace Twitter Alan Turing"></a>
+        <a href="https://www.instagram.com/cpifpalanturing" target="_blank"><img src="imagenes/icons8-instagram-48.png" alt="Enlace Instagram Alan Turing"></a>
+        <a href="https://www.youtube.com/@cpifpalanturing" target="_blank"><img src="imagenes/icons8-youtube-48.png" alt="Enlace YouTube Alan Turing"></a>
+        <a href="https://fpalanturing.es" target="_blank"><img src="imagenes/icons8-website-48.png" alt="Enlace página Alan Turing"></a>
+        </footer>
+</body>
+</html>

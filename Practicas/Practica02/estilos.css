@@ -1,0 +1,96 @@
+
+/* Ocupar toda la altura */
+body, html {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabecera */
+.cabecera {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Imagen logo cabecera */
+.marca img {
+    height: 110px;
+    width: 300px;
+}
+
+/* Contenido principal */
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/* Formulario */
+.formulario {
+    border-width: 9px;
+    color: firebrick;
+}
+
+.formulario fieldset {
+    border-color: darkgoldenrod;
+    border-radius: 7px;
+    width: 400px;
+    background-color: #F4F1ED;
+}
+
+/* Leyendas del formulario */
+.formulario legend {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Elementos del formulario */
+.elemento-formulario {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+/* Elemento de la imagen de la incidencia del formulario */
+#subir-imagen {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+/* Botonos del formulario */
+#botones {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Cabecera h3 pie de página */
+.pie h3 {
+    color: #F7C600; 
+}
+
+/* Enlaces pie de página */
+.pie a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Imágenes de enlaces pie de página */
+.pie img {
+    width: 48px;
+    height: 48px;
+}
