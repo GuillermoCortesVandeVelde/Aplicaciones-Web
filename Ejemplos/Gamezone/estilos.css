@@ -211,3 +211,21 @@ button[type="submit"], button[type="reset"] {
 button[type="submit"]:hover {
     background-color: rgb(225, 225, 225);
 }
+
+/* ============================ */
+/*       ZONA DE TIENDA         */
+/* ============================ */
+
+/* Aplicar estos estilos solo a los elementos que tengan las clases tienda y tarjeta a la vez */
+.tienda.tarjeta {       /* Cambia solo el espacio */
+    width: min(1600px, 95%);
+}
+
+/* Contenedor de las cards */
+.lista-cards-flexx{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;        /* Centrar horizontalmente */
+}

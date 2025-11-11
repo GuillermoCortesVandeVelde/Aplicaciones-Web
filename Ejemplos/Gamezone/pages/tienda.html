@@ -28,33 +28,29 @@
         </nav>
     </header>
     <main id="contenido-principal">
-        <section class="tarjeta" id="registro">
-            <h2>Registro de usuario</h2>
-            <form name="register" action="#" method="post">
-                <div>
-                    <div>
-                        <label for="usuario">Nombre de usuario:</label>
-                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
-                    </div>
+        <section class="tarjeta tienda">
+            <!-- Contenedor de cards de producto -->
+            <div class="lista-cards lista-cards--flex">
 
-                    <div>
-                        <label for="clave">Contraseña:</label>
-                        <input type="password" id="clave" name="clave" minlength="6" maxlength="12" required>
-                    </div>
+                <!-- Primer producto -->
+                <article class="card">
 
-                    <div>
-                        <label for="correo">Email:</label>
-                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-                    </div>
+                    <!-- Imagen -->
+                    <img src="../imagenes/mouse.png" alt="Ratón Gaming RGB" class="card-imagen">
 
-                    <div>
-                        <label for="dni">DNI o NIE:</label>
-                        <input type="text" name="dni" id="identidad" placeholder="12345678A/X1234567M" pattern="((([0-9]{8})|([X-Zx-z]{1}[0-9]{7}))([A-Za-z]{1}))" required>
-                    </div>
-                </div>
-                <!-- Botón de envío -->
-                <button type="submit">Registrarse</button>
-            </form>
+                    <!-- Título del producto -->
+                    <h3 class="card-titulo">Ratón Gaming RGB</h3>
+
+                    <!-- Breve descriptición del producto -->
+                    <p class="card-descripcion">Ratón ergonómico con 6 botonos y sensor de alta precisión</p>
+
+                    <!-- Precio del producto -->
+                    <p class="card-precio">19,99€</p>
+
+                    <!-- Botón (solo decorativos, sin funcionalidad JavaScript) -->
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="pie">
