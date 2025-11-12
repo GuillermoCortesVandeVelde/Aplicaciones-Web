@@ -222,12 +222,12 @@ button[type="submit"]:hover {
 }
 
 /* Contenedor de las cards */
-.lista-cards-flexx{
+.lista-cards--flex{
     display: flex;                  /*Activo el modelo Flex */
     flex-direction: row;            /* Es el valor por defecto igualmente */
     flex-wrap: wrap;                /* Permitir que las cards salten de línea si no caben */
     gap: 16px;                      /*Espacio uniforme entre las cards */
-    justify-content: center;        /* Centrar horizontalmente */
+    justify-content: flex-start;        /* Centrar horizontalmente */
 }
 
 /* Card individual */
@@ -244,7 +244,7 @@ button[type="submit"]:hover {
 .card-imagen {
     width: 100%;
     height: 180px;
-    object-fit: cover;      /* Ajustamos la imagen recortándola */
+    object-fit: contain;      /* Ajustamos la imagen recortándola */
     background-color: #f4f4f4;
     border-radius: 8px;
     margin-bottom: 8px;
