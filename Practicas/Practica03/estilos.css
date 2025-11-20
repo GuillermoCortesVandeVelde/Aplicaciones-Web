@@ -4,11 +4,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh;
 }
 
-.main {
+main {
     padding: 0 2rem 2rem 2rem;
-    height: 100hv;
+    flex-grow: 1;
 }
 
 header {
@@ -58,6 +59,7 @@ footer {
     background-color: #F9F9F9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     width: min(900px, 95%);
+    transition: transform 0.3s;
 }
 
 .tarjeta img {
@@ -76,4 +78,10 @@ footer {
 .precio {
     font-size: 1.25rem;
     color: #E74C3C;
+}
+
+.tarjeta.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation-timing-function: ease-in-out;
 }
