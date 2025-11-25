@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Arial", sans-serif;
     background-color: #F4F4F4;
@@ -43,10 +47,10 @@ footer {
 
 .contenedor-tarjetas-productos {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-items: center;
     gap: 20px;
     padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .tarjeta {
@@ -59,7 +63,7 @@ footer {
     background-color: #F9F9F9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     width: min(900px, 95%);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .tarjeta img {
@@ -83,5 +87,4 @@ footer {
 .tarjeta.tarjeta:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    animation-timing-function: ease-in-out;
 }
