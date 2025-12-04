@@ -455,6 +455,38 @@ button[type="submit"]:hover {
     grid-row: 3 / 4;
 }
 
+/* ================================================ */
+/*   SECCION GUIAS (diferente estructura al resto)  */
+/* ================================================ */
+
+.guias h1 {
+    margin-top: 0;
+}
+
+.guias-videos {
+    margin-top: 2rem;
+}
+
+.guias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Cada guía individual */
+.guia-video h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Ajuste de los iframes */
+.guia-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;  /* Mantiene el formato panorámico */
+    border: 0;
+    border-radius: 8px;
+}
+
 /* DISEÑO RESPONSIVE */
 /* Media query para moviles */
 @media (width <= 380px) {
